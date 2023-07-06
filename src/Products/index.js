@@ -1,5 +1,6 @@
 import React, {useEffect,useState}  from "react";
-import "./style.cs"
+import "./style.css"
+import { useParams } from "react-router-dom";
 const Products = ()=>{
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState([]);

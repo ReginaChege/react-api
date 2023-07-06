@@ -8,6 +8,7 @@ function App() {
     <div>
       <Login/>
       <Products/>
+      <Navbar/>
     </div>
   );
 }
