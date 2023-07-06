@@ -30,16 +30,16 @@ const Products = ()=>{
     return(
         
         <div >
-        <Link><button >Add product</button></Link>
+        <h2 className="heading">List of Products</h2>
             <div className="products">
-            <h2>List of Products</h2>
             {products.map(item=>(
                 <div key={item.id}>
                     <img src={item.thumbnail} />
                     <h3>{item.title}</h3>
-                    {/* <p>Description</p>
+                    <p>{item.description}</p>
                     <p>{item.price}</p>
-                    <h1>{item.discountpercentage}</h1> */}
+                    <h1>{item. discountPercentage}</h1>
+                    <Link><button >Add product</button></Link>
                 </div>
             ))}
         </div>
