@@ -1,6 +1,7 @@
 import React, {useEffect,useState}  from "react";
-import "./style.css"
-import { useParams } from "react-router-dom";
+import "./style.css";
+import { Link } from "react-router-dom";
+
 const Products = ()=>{
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState([]);
@@ -27,15 +28,23 @@ const Products = ()=>{
         
     }
     return(
-        <div>
+        
+        <div >
+        <Link><button >Add product</button></Link>
+            <div className="products">
             <h2>List of Products</h2>
             {products.map(item=>(
                 <div key={item.id}>
                     <img src={item.thumbnail} />
                     <h3>{item.title}</h3>
+                    {/* <p>Description</p>
+                    <p>{item.price}</p>
+                    <h1>{item.discountpercentage}</h1> */}
                 </div>
             ))}
         </div>
+        </div>
+
     )
 }
 export default Products;

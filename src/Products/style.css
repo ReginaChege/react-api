@@ -1,4 +1,8 @@
-.image{
+.products{
     display: grid;
     grid-template-columns: repeat(3,10fr);
+}
+.products img{
+    width: 400px;
+    height: 400px;
 }
